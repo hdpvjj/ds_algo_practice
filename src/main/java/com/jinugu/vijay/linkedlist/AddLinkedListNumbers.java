@@ -33,8 +33,7 @@ public class AddLinkedListNumbers {
             l2 = l2 != null ? l2.next : null;
         }
         if(carry > 0){
-            ListNode node = new ListNode(carry);
-            prev.next = node;
+            prev.next = new ListNode(carry);
         }
         return result;
     }
